@@ -12,7 +12,7 @@ public class ConditionalStatements {
 		} else if(num == 3) {
 			System.out.print("Number is 3");
 		} else {
-			System.out.print("Number is not 1,2,3");
+			System.out.print("Number is not 1,2,3"); 
 		}
 
 	}
