@@ -1,5 +1,10 @@
 package corejavaprograms;
 
-public class FirstProgram {
+public class FirstProgram 
+{
+	public static void main(String[] args)
+	{
+		
+	}
 
 }
