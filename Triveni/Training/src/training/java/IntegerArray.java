@@ -34,7 +34,7 @@ public class IntegerArray
 		System.out.println();
 		
 		
-		System.out.println("Given array in Ascending order");
+		System.out.println("Given array is Ascending order");
 		for(int i=0;i<=a1.length-1;i++)
 		{
 			System.out.print(a1[i]+"");
@@ -60,7 +60,7 @@ public class IntegerArray
 		System.out.println();
 		
 		
-		System.out.println("Given array in Descending order");
+		System.out.println("Given array is Descending order");
 		for(int i=0;i<=a1.length-1;i++)
 		{
 			System.out.print(a1[i]+"");
