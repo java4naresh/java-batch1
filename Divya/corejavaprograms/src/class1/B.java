@@ -1,6 +1,6 @@
 package class1;
 
-//PUBLIC MODIFIER---within the other class,same package
+//PUBLIC MODIFIER---within the other class, but same package
 
 public class B 
 {
