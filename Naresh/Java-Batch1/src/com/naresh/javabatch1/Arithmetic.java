@@ -2,8 +2,10 @@ package com.naresh.javabatch1;
 
 public class Arithmetic {
 	
-	public int addition(int num1, int num2) {
-		//System.out.println(num1+num2);
+	public int i = 0;
+	
+  protected int addition(int num1, int num2) {
+		System.out.println("Parent");
 		return num1+num2;
 	}
 	
