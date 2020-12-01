@@ -28,7 +28,7 @@ class B extends A
 		B b1=new B(7,8);
 		System.out.println(b1.i);
 		System.out.println(b1.j);
-		System.out.println("=========");
+		System.out.println("============");
 	}
 
  }
