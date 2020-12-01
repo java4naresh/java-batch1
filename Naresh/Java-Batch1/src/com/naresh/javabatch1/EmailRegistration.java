@@ -9,6 +9,25 @@ public class EmailRegistration {
 	private String address;
 	private String email;
 	
+	public EmailRegistration() {
+		
+	}
+	
+	public EmailRegistration(String fName, String lName, String gdr, String phNo, String addr, String eml) {
+		firstName = fName;
+		lastName = lName;
+		gender = gdr;
+		address = addr;
+		email = eml;
+		phoneNo = phNo;
+	}
+	
+	public EmailRegistration(String fName, String lName, String gdr) {
+		firstName = fName;
+		lastName = lName;
+		gender = gdr;
+	}
+	
 	public String getFirstName() {
 		return firstName;
 	}
