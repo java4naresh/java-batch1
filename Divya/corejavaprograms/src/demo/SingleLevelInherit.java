@@ -22,13 +22,13 @@ class B extends A
  {
 	 public static void main(String[] args)
 	 {
-		System.out.println("Main Starts.");
+		System.out.println("Main Starts...");
 		A a1=new A(5);
 		System.out.println(a1.i);
 		B b1=new B(7,8);
 		System.out.println(b1.i);
 		System.out.println(b1.j);
-		System.out.println("Main ends.");
+		System.out.println("Main ends...");
 	}
 
  }
