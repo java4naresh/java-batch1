@@ -30,6 +30,7 @@ class MultiLevel
 {
     public static void main(String[] args)
     {
+    	System.out.println("Main Starts");
 		A1 a1=new A1(8);
 		System.out.println(a1.i);
 		B1 b1=new B1(4,8);
