@@ -15,12 +15,7 @@ public class Client extends Arithmetic{
 	public static void main(String[] args) {
 		//Client arith = new Client();
 		//arith.addition(10, 20);
-<<<<<<< HEAD
-		EmailRegistration eR = new EmailRegistration();
-
-=======
 		//EmailRegistration eR = new EmailRegistration();
->>>>>>> 8a9773773c4f0bef8af9f548e680643af95e8a7a
 		/*System.out.println(eR.firstName);
 		System.out.println(eR.lastName);
 		System.out.println(eR.gender);
@@ -34,12 +29,7 @@ public class Client extends Arithmetic{
 		System.out.println(eR.gender);
 		System.out.println(eR.phoneNo);
 		System.out.println(eR.address);*/
-<<<<<<< HEAD
-
-		eR.setFirstName("Naresh");
-=======
 		/*eR.setFirstName("Naresh");
->>>>>>> 8a9773773c4f0bef8af9f548e680643af95e8a7a
 		eR.setLastName("Kambala");
 		eR.setEmail("KambalaNaresh4java");
 		System.out.println(eR.getFirstName());
