@@ -8,7 +8,7 @@ public class Bank2 {
 		int b=5;
 System.out.println("welcome to java program ");
 System.out.println("welcome to india");
-System.out.println(a+b);
+System.out.print(a+b);
 	}
 
 }
