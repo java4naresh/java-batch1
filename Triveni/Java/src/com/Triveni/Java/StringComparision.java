@@ -2,8 +2,7 @@ package com.Triveni.Java;
 
 public class StringComparision 
 {
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		//Contains() method uses to check the string prasent or not in string literal,order is important & case sensitive
 	
 	String s1="Java Angular";
