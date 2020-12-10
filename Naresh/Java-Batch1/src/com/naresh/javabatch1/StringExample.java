@@ -1,5 +1,7 @@
 package com.naresh.javabatch1;
 
+import java.util.Arrays;
+
 public class StringExample {
 	
 	int num;
@@ -31,15 +33,26 @@ public class StringExample {
 	public void setS(String s) {
 		this.s = s;
 	}
+	
+	
 
+	/*@Override
+	public int hashCode() {
+		return 1;
+	}*/
+
+	@Override
+	public String toString() {
+		return "StringExample [num=" + num + ", fullName=" + fullName + ", s=" + s + "]";
+	}
 
 	public static void main(String[] args) {
 		StringExample se = new StringExample();
 		se.setNum(10);
-		System.out.println(se.getNum());
+		//System.out.println(se.getNum());
 		se.setNum(20);
-		System.out.println(se.getNum());
-		System.out.println(se.getFullName());
+		//System.out.println(se.getNum());
+		//System.out.println(se.getFullName());
 		String[] s = se.fullName.split(" ");
 		for(int j=0;j<s.length;j++) {
 			String h = s[j];
@@ -50,7 +63,52 @@ public class StringExample {
 		}*/
 		System.out.print(" ");
 		}
+		System.out.println();
+		System.out.println(se.hashCode());
+		System.out.println(se.toString());
+		String course3 = new String("Java");
+		String course = "Java";
+		String course2 = "Java";
+		
+		System.out.println(course == course2);
+		System.out.println(course == course3);
+		System.out.println(course.equals(course2));
+		System.out.println(course.equals(course3));
+		String courses = "Java Angular Mysql";
+		System.out.println(courses);
+		System.out.println(courses.substring(0, 4));
+		System.out.println(courses.substring(0, 3));
+		String []courses1 = {"Java", "Angular", "Mysql", "AWS"};
+		char[] chars = {'A', '1','Z'};
+		for (String string : courses1) {
+			//System.out.println(string);
+		}
+		System.out.println(Arrays.toString(courses1));
+		for (int i = 0; i < courses1.length; i++) {
+			for (int j = i; j < courses1.length; j++) {
+				//System.out.println(courses1[i].compareTo(courses1[j]));
+				if(courses1[i].compareTo(courses1[j]) > 0) {
+					String temp = courses1[i];
+					courses1[i] = courses1[j];
+					courses1[j] = temp;
+				}
+			}
+		}
+		for (int i = 0; i < chars.length; i++) {
+			if(!(chars[i] >= 65 && chars[i]<=90) ) {
+				System.out.println(chars[i]);
+			}
+		}
+		//A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z
+		String name = "Divya";
+		String name2 = "Divyan";
+		char n = 'Z';
+		int k = n;
+		System.out.println(k);
+		/*System.out.println(name.compareTo(name2));
+		
 
+		System.out.println(Arrays.toString(courses1));*/
 	}
 
 }
