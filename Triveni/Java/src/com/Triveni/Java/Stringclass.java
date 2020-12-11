@@ -23,6 +23,7 @@ public class Stringclass {
 			String a = s[j1];
 			StringBuffer sb = new StringBuffer(a);
 			System.out.print(sb.reverse());
+			System.out.println(sb.hashCode());
 
 		}
 
