@@ -9,5 +9,5 @@ public class StringTask {
       public void AccType(){
     	  System.out.println("AccountType:"+acNo.substring(5, 8));
       }
-       
+        
 }
