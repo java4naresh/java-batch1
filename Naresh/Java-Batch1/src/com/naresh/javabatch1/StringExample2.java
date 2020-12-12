@@ -39,7 +39,22 @@ public class StringExample2 {
 		// SAV-154-154
 		// account type = savings
 		// account number = 157
-		
+		String[] accountTypes = {"SAV", "CUR", "PER", "JOI"};
+		String accNum="451-SAV-157";
+		//String s=accNum.replaceAll("\\d","");
+		String s=accNum.substring(4, accNum.length()-4);
+		String[] fields = accNum.split("-");
+		System.out.println(fields[0]);
+		System.out.println(fields[1]);
+		System.out.println(fields[2]);
+        System.out.println("Account Type:"+s);
+        String s1=accNum.substring(8, 11);
+        System.out.println("Account Number:"+s1);
+        String firstName = "Naresh";
+		String lastName = "Kambala";
+		String fullName = firstName+" "+lastName;
+		String fullName2 = firstName.concat(" ").concat(lastName);
+		System.out.println(fullName+"\n"+fullName2);
 		
 	}
 
