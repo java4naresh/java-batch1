@@ -17,18 +17,25 @@ public class ExceptionHandlingExample {
 
 	public static void main(String[] args)  {
 		
-		String name = null;
+		String name = "gjhg";
 		int num1 = 100;
 		int num2 = 10;
 		//if(name != null)
 		try {
-			if(name != null)
-				System.out.println(name.charAt(1));
-		} catch(NullPointerException ne) {
-			System.err.println("Name Should not be null");
-		}
-		//if(num1 != 0 && num2 != 0)
+
 			System.out.println(num1/num2);
+			System.out.println(name.charAt(1));
+			int[] arr = {1};
+			System.out.println(arr[2]);
+		}  catch(NullPointerException ne) {
+			System.err.println("Name Should not be null");
+		} catch(ArithmeticException ae) {
+			System.err.println("Please give valid numbers");
+		} catch(Exception e) {
+			System.err.println("Unknown exception");
+		} catch(Throwable e) {
+			System.err.println("Unknown exception");
+		}
 		
 		String file = "first";
 		try {
