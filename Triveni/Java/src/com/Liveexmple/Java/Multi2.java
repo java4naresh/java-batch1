@@ -5,12 +5,23 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Multi2 {
-	private static void readSecondFile1() throws IOException {
-		FileReader fileReader;
 
-		fileReader = new FileReader(new File(""));
-		System.out.println(fileReader.read());
+	private static void readFile() {
+		/*
+		 * FileReader fileReader;
+		 * 
+		 * fileReader = new FileReader(new File(""));
+		 * System.out.println(fileReader.read());
+		 * 
+		 * }
+		 */
+		try {
 
+			FileReader fileReader = new FileReader(new File(""));
+			System.out.println(fileReader.read());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static void main(String[] args) {
@@ -28,11 +39,16 @@ public class Multi2 {
 		if (num2 != 0 & num3 != 0)
 			System.out.println(num2 >= num3);
 		try {
-			readSecondFile();
+			readFile();
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+	}
+
+	private static void readFile1() {
+		// TODO Auto-generated method stub
 
 	}
 
