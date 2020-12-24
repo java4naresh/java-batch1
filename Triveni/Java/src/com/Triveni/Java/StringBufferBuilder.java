@@ -18,7 +18,7 @@ public class StringBufferBuilder {
 			sb.append("\nCity:Chennai");
 		}
 		System.out.println(sb);
-		
+
 		System.out.println("---String Builder is Mutable & NotLegacy&NotSycronized(Multiple threads allow---");
 		String fullName1 = "Triveni";
 		fullName1 = fullName1 + " Ponnaganti";
@@ -32,11 +32,10 @@ public class StringBufferBuilder {
 			sbb.append("\nCity:Chennai");
 		}
 		System.out.println(sbb);
-		
-		
+
 		System.out.println("----StringBuffer & Builder Methods----");
-		
-			// insert()
+
+		// insert()
 		System.out.println("-------Inert Method-----");
 		StringBuffer sb1 = new StringBuffer("Mutable string by StringBuffer");
 		System.out.println("Original String: " + sb1);
@@ -74,12 +73,11 @@ public class StringBufferBuilder {
 		System.out.println("Original String: " + sb5);
 
 		System.out.println("Default Capacity: " + sb5.capacity());
-		
-		
-		//To Calculate Time for StringBuffer and StringBuilder
-		
-				long time=System.currentTimeMillis();
-				System.out.println("Time Calculation-"+time);
+
+		// To Calculate Time for StringBuffer and StringBuilder
+
+		long time = System.currentTimeMillis();
+		System.out.println("Time Calculation-" + time);
 
 	}
 

@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import javax.imageio.IIOException;
 
-public class MultithreadingTask {
+public class ExceptionHandlingTask {
 
 	private static void readFirstFile() throws IOException {
 		FileReader fileReader;
