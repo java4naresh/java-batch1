@@ -3,23 +3,25 @@ package com.Triveni.Java;
 public class Task {
 	public static void main(String[] args) {
 
-		String t1 = "456-SAV-157";
-		Substring t2 =new Substring();
-		String t3 = "456-SAV-157";
-		String t4 = "456-SAV-157";
-		if(t1 .equals(t1))
+		String[] accType = {"SAV","CUR","Joint","PER"};
+		String accNum="456-sav-157";
+		String s1 = accNum.substring(4,accNum.length()-4);
+		String[] fields=accNum.split("-");
+		//System.out.println(fields[0]);
+		System.out.println(fields[1]);
+		if("SAV".equalsIgnoreCase(fields[1]))
 		{
 			System.out.println("Accunt Type    " +"Savings");
 		}
-		else if()
+		else if("CUR".equalsIgnoreCase(fields[1]))
 		{
 			System.out.println("Accunt Type    " +"Current");
 		}
-		else if(t3.equals(t3)) 
+		else if("PER".equalsIgnoreCase(fields[1])) 
 		{
 			System.out.print("Account Type  "+"Personal");
 		}
-		else if(t4.equals(t4)) 
+		else if("Joint".equalsIgnoreCase(fields[1])) 
 		{
 			System.out.print("Account Type  "+"Joint");
 		}

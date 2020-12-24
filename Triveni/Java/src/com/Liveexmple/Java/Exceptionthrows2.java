@@ -11,6 +11,7 @@ public class Exceptionthrows2 {
 		fileReader = new FileReader(new File(""));
 		System.out.println(fileReader.read());
 	}
+
 	public static void main(String[] args) {
 		// Relational operations
 		int num2 = 100;
@@ -33,8 +34,9 @@ public class Exceptionthrows2 {
 		}
 
 	}
+
 	private static void readSecondFile() {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

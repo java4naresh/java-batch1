@@ -11,25 +11,27 @@ public class Exceptionthrows3 {
 		fileReader = new FileReader(new File(""));
 		System.out.println(fileReader.read());
 	}
-	public static void main(String[] args)  {
-		
+
+	public static void main(String[] args) {
+
 		String name = "Triveni";
 		int num1 = 100;
 		int num2 = 10;
-		if(name != null)
-			System.out.println(name.charAt(1));	
-		if(num1!=0 && num2 !=0)
-			System.out.println(num1/num2);	
+		if (name != null)
+			System.out.println(name.charAt(1));
+		if (num1 != 0 && num2 != 0)
+			System.out.println(num1 / num2);
 		try {
 			readThirdFile();
-			
-		}catch(Exception e) {
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
+
 	private static void readThirdFile() {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

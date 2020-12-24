@@ -5,15 +5,17 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Multi1 {
+public class Exception1 {
 
-	private static void readFirstFile1() throws IOException {
-		FileReader fileReader;
+	private static void readFirstFile1() {
+	try {
 
-		fileReader = new FileReader(new File(""));
-		System.out.println(fileReader.read());
+		FileReader fileFirstReader = new FileReader(new File(""));
+		System.out.println(fileFirstReader.read());
+	} catch (Exception e) {
+		e.printStackTrace();
 	}
-
+}
 	public static void main(String[] args) throws IOException {
 		// Arthematic operations
 		int num2 = 100;
@@ -31,8 +33,8 @@ public class Multi1 {
 		try {
 			readFirstFile1();
 
-		} catch (FileNotFoundException fne) {
-			fne.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 

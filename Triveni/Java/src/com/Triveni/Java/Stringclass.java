@@ -21,7 +21,7 @@ public class Stringclass {
 		String[] s = s1.name.split(" ");
 		for (int j1 = 0; j1 < s.length; j1++) {
 			String a = s[j1];
-			StringBuffer sb = new StringBuffer(a);
+			StringBufferBuilder sb = new StringBufferBuilder(a);
 			System.out.print(sb.reverse());
 			System.out.println(sb.hashCode());
 
