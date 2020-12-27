@@ -43,15 +43,15 @@ public class ExceptionHandlingTask {
 		fileReader = new FileReader(new File(""));
 		System.out.println(fileReader.read());
 
-	
-}
+	}
+
 	public static void main(String[] args) {
-		String file1="First";
-		String file2="Second";
-		String file3="Third";
-		String file4="Fourth";
-		String file5="Fifth";
-		
+		String file1 = "First";
+		String file2 = "Second";
+		String file3 = "Third";
+		String file4 = "Fourth";
+		String file5 = "Fifth";
+
 		String name = "Triveni";
 		int num1 = 100;
 		int num2 = 10;
@@ -63,16 +63,15 @@ public class ExceptionHandlingTask {
 			if (file1.equals("First"))
 				System.out.println("First file is Printed");
 
-			if(file2.equals("Second"))
+			if (file2.equals("Second"))
 				System.out.println("Second file is Printed");
-			if(file3.equals("Third"))
+			if (file3.equals("Third"))
 				System.out.println("Third file is Printed");
-			if(file4.equals("Fourth"))
+			if (file4.equals("Fourth"))
 				System.out.println("Fourth file is Printed");
-			if(file5.equals("Fifth"))
+			if (file5.equals("Fifth"))
 				System.out.println("Fifth file is Printed");
-			 
-			 
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
