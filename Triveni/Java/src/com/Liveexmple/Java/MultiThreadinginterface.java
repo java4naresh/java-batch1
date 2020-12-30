@@ -1,12 +1,12 @@
 package com.Liveexmple.Java;
 
-public class MultiThreadinginterface  implements Runnable{
+public class MultiThreadinginterface implements Runnable {
 	public void run() {
 		Iterator();
 		Iterator1();
 	}
 
-	public void Iterator() {
+	void Iterator() {
 		for (int i = 1; i <= 10; i++) {
 			System.out.println(i);
 			try {
@@ -34,7 +34,7 @@ public class MultiThreadinginterface  implements Runnable{
 
 	public static void main(String[] args) {
 		Runnable obj1 = new MultiThreadingTask1();
-		 Thread t1=new Thread(obj1);
+		Thread t1 = new Thread(obj1);
 		// obj1.Iterator1();
 		t1.start();
 
