@@ -3,7 +3,7 @@ package com.Triveni.Java;
 public class Substring {
 
 	public static void main(String[] args) {
-		// using substring Method
+		// using substring Method.
 		System.out.println("By Using Substring Method");
 		String courses = "Java Angular Mysqual";
 		System.out.println(courses.substring(0, 4));

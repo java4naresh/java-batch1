@@ -8,6 +8,10 @@ public class Object
 	        Object date2 = (Object) date.clone();
 	        System.out.println(date2.toString());
 	    }
+		public void setDaemon(boolean b) {
+			// TODO Auto-generated method stub
+			
+		}
 	}
 
 

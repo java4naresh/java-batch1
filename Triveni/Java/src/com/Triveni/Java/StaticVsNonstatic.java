@@ -1,8 +1,10 @@
 package com.Triveni.Java;
 
 public class StaticVsNonstatic {
-	static int i = 20;
-	static int j = 10;
+	static int i = 10;
+	static int j = 20;
+	int k= 30;
+	int l=40;
 	private char[] sub;
 
 	int sub(int i, int j) {
@@ -29,6 +31,12 @@ public class StaticVsNonstatic {
 		StaticVsNonstatic s = new StaticVsNonstatic();
 		int sub = i - j;
 		System.out.println(sub);
+		
+		System.out.println(i);
+		System.out.println(j);
+		System.out.println(s.k);
+		System.out.println(s.l);
+		
 
 	}
 
