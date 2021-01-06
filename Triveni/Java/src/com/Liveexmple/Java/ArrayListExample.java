@@ -6,6 +6,7 @@ public class ArrayListExample {
 
 	public static void main(String[] args) {
 		ArrayList<String> a1 = new ArrayList();
+		ArrayList<String> a2 = new ArrayList();
 		a1.add("Triveni");
 		a1.add("Durga");
 		a1.add("sai");
@@ -14,13 +15,14 @@ public class ArrayListExample {
 		a1.add(3, "FGH");
 		// a1.add(0, "Mouni");
 		System.out.println(" 1 " + a1.clone());
-		System.out.println(" 2 " + a1.contains(0));
+		System.out.println(" 2 " + a1.contains("Sai"));
 		System.out.println(" 3 " + a1.equals(2));
 		a1.ensureCapacity(1);
 		System.out.println(" 4 " + a1.hashCode());
 		System.out.println(" 5 " + a1.indexOf(2));
 		System.out.println(" 6 " + a1.isEmpty());
-		System.out.println(" 7 " + a1.lastIndexOf(2));
+		System.out.println(" 7 " + a1.lastIndexOf("Durga"));
+		System.out.println(" 8 " + a2.addAll(a1));
 		// a1.retainAll(2);
 
 		// using get() to print array values
