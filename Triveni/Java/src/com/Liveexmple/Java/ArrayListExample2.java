@@ -1,6 +1,7 @@
 package com.Liveexmple.Java;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListExample2 {
@@ -20,7 +21,7 @@ public class ArrayListExample2 {
 		System.out.println(a1);
 		a1.add("Kanna");
 		System.out.println(a1);
-		// collections.sort(a1);
+		Collections.sort(a1);
 		System.out.println(a1.get(1));
 		System.out.println(" 1 " + a1.clone());
 		System.out.println(" 2 " + a1.contains("Sai"));

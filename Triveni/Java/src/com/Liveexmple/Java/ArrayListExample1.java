@@ -17,12 +17,13 @@ public class ArrayListExample1 {
 
 		int[] intarr = new int[2];
 		String[] strarr = new String[2];
-		for (int i = 0; i < al.size(); i++)
+		for (int i = 0; i < al.size(); i++) {
 			if (al.get(i) instanceof Integer)
 				intarr[0] = (Integer) al.get(i);
 			else
 				strarr = (String[]) al.get(i);// here class cast Exception to overcome this exception using Generics
 		// class cast means to change integer to string this is class cast Exception.
+	}
 	}
 
 }
