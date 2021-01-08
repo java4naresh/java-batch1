@@ -6,7 +6,7 @@ public class Employee {
 
 	private String name;
 
-	//private Employee Employee;
+	// private Employee Employee;
 
 	public Employee() {
 
@@ -39,11 +39,13 @@ public class Employee {
 		return this.empId;
 	}
 
+	@Override
 	public boolean equals(Object obj) {
-		Employee emp=obj;
-		if (this.empId == emp.getEmpId() && this.name.equals(emp.getName()))
-			
-		return true;
+		Employee emp = (Employee) obj;
+		if (this.empId == emp.getEmpId() && this.name.equals(emp.getName())) {
+			return true;
+
+		}
 		return false;
 	}
 

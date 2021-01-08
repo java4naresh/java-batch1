@@ -8,7 +8,7 @@ public class CustomisedArrayList {
 	public static void main(String[] args) {
 		Employee e1 = new Employee(101, "Triveni");
 		Employee e2 = new Employee(102, "Durga");
-		List<String> employeeList = new ArrayList<>();
+		List<Employee> employeeList = new ArrayList<>();
 		employeeList.add(e1);
 		employeeList.add(e2);
 		System.out.println(employeeList);
