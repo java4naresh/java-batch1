@@ -7,7 +7,7 @@ public class ArrayListExample {
 
 	public static void main(String[] args)
 	{
-		BikeModels b1=new BikeModels(8696," Pulsar", 140, 40.0, "Blue", 80000);
+		BikeModels b1=new BikeModels(8696,"Pulsar", 140, 40.0, "Blue", 80000);
 		BikeModels b2=new BikeModels(4695,"NS200", 150, 25.0,"White", 140000);
 		List<BikeModels> bm=new ArrayList<>();
 		bm.add(b1);
@@ -18,6 +18,10 @@ public class ArrayListExample {
 		bm.get(2).setBrand("RoyalEnfield");
 		System.out.println(bm);
 		
+		bm.sort((bike1,bike2) -> bike1.getBrand().compareTo(bike2.getBrand()));
+		System.out.println(bm);
+		bm.sort((bike1,bike2) -> bike1.getColour().compareTo(bike2.getColour()));
+		System.out.println(bm);
 	}
 
 }
