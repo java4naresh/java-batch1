@@ -1,8 +1,10 @@
 package com.naresh.javabatch1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class ArrayListExample2 {
 
@@ -38,21 +40,47 @@ public class ArrayListExample2 {
             System.out.println(list3.indexOf(3));
             System.out.println(list3.isEmpty());
             System.out.println(list3.lastIndexOf(1));
-            //list3.replaceAll(operator);
+            list3.replaceAll(num -> num*10);
+            //replaceall internal code
+           /* for(int i=0; i<list3.size();i++) {
+            	int num = list3.get(i);
+            	list3.set(i, num*10);
+            	
+            }*/
+            list3.removeIf(num -> num == 10);
+            // removeif internal code
+             /*for(int i=0; i<list3.size();i++) {
+        	      if(list3.get(i) == 10) {
+        	    	  list3.remove(i);
+        	      }
+        	
+            }*/
+            list3.sort((num1,num2) -> num2.compareTo(num1));
             System.out.println(list3);
             list3.add(1, 9);
             System.out.println(list3);
             list3.set(1, 10);
             System.out.println(list3);
+           
             
             Collections.sort(list3);
             System.out.println(list3);
-            System.out.println(list3.retainAll(list2));
+            //System.out.println(list3.retainAll(list2));
             System.out.println(list3);
             ArrayList<Integer> list4 = (ArrayList<Integer>) list3.clone();
             list4.add(6);
             System.out.println(list4);
             System.out.println(list3);
+            list3.spliterator().forEachRemaining(item -> System.out.println(item));
+            for(int num:list3) {
+            	System.out.println(num);
+            }
+            list3.trimToSize();
+            Integer[] arr = {1,2,3,4,5,6};
+            List<Integer> l = Arrays.asList(arr);
+            System.out.println(l);
+            
+            
 	}
 
 }
