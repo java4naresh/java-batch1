@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class ArrayListExample {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		ArrayList al=new ArrayList();
 		al.add("S");
