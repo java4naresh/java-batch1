@@ -9,13 +9,13 @@ public class ArrayListExample2 {
 	public static void main(String[] args) {
 		ArrayList<String> a1 = new ArrayList();
 		ArrayList<String> a2 = new ArrayList();
-	
-		a1.add("Triveni");//0
-		a1.add("Durga");//1
-		a1.add("sai");//2
-		a1.add(1, "ABC");//3
-		a1.add(2, "CDE");//4
-		a1.add(3, "FGH");//5
+
+		a1.add("Triveni");// 0
+		a1.add("Durga");// 1
+		a1.add("sai");// 2
+		a1.add(1, "ABC");// 3
+		a1.add(2, "CDE");// 4
+		a1.add(3, "FGH");// 5
 		System.out.println(a1);
 		a1.set(0, "Mouni");
 		System.out.println(a1);
@@ -35,8 +35,6 @@ public class ArrayListExample2 {
 		System.out.println(" 9 " + a2.addAll(a1));
 		System.out.println(a1.retainAll(a2));
 		System.out.println(a1);
-		
 
 	}
 }
-	

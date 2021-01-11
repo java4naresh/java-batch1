@@ -5,7 +5,7 @@ import java.util.Vector;
 public class Vectoremple {
 
 	public static void main(String[] args) {
-		Vector<Integer> vector=new Vector<>();
+		Vector<Integer> vector = new Vector<>();
 		vector.add(11);
 		vector.add(22);
 		vector.add(33);
@@ -24,16 +24,14 @@ public class Vectoremple {
 		System.out.println(vector.equals(vector));
 		System.out.println(vector.indexOf(11));
 		System.out.println(vector.isEmpty());
-		//System.out.println(vector.removeIf(vector));
+		// System.out.println(vector.removeIf(vector));
 		System.out.println(vector.retainAll(vector));
 		System.out.println(vector.stream());
 		System.out.println(vector.toArray());
-		//System.out.println(vector.replaceAll(vector));
+		// System.out.println(vector.replaceAll(vector));
 		System.out.println(vector.retainAll(vector));
 		System.out.println(vector.size());
 		System.out.println(vector.parallelStream());
-		
-		
 
 	}
 
