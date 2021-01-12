@@ -1,6 +1,6 @@
 package corejavaprograms;
 
-public class BikeModels
+public class BikeModels implements Comparable
 {
 	int bikeNum;
 	String brand;
@@ -138,6 +138,13 @@ public class BikeModels
 		if (speed != other.speed)
 			return false;
 		return true;*/
+	}
+
+	@Override
+	public int compareTo(Object ob)
+	{
+		BikeModels bike=(BikeModels)ob;
+		return this.brand.compareTo(bike.getBrand());
 	}
 	
 	

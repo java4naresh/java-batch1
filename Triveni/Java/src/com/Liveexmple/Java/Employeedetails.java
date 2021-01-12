@@ -67,7 +67,6 @@ public class Employeedetails {
 		if (this.empNo == emp.getempNo() && this.empName == emp.getempName() && this.salary == emp.getsalary()
 				&& this.position == emp.getposition() && this.location == emp.getlocation())
 			return true;
-		return false;
 		if (this == obj)
 			return true;
 		if (emp == null)
@@ -91,5 +90,12 @@ public class Employeedetails {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Employeedetails [empNo=" + empNo + ", empName=" + empName + ", salary=" + salary + ", position="
+				+ position + ", location=" + location + "]";
+	}
+	
 
 }
