@@ -1,11 +1,13 @@
 package com.Liveexmple.Java;
 
-public class Employeedetails {
+
+public  class Employeedetails implements Comparable{
 	int empNo;
 	String empName;
 	double salary;
 	String position;
 	String location;
+	private Object emp;
 
 	public Employeedetails(int empNo, String empName, double salary, String position, String location) {
 		super();
@@ -67,7 +69,7 @@ public class Employeedetails {
 		if (this.empNo == emp.getempNo() && this.empName == emp.getempName() && this.salary == emp.getsalary()
 				&& this.position == emp.getposition() && this.location == emp.getlocation())
 			return true;
-		if (this == obj)
+		/*if (this == obj)
 			return true;
 		if (emp == null)
 			return false;
@@ -88,13 +90,56 @@ public class Employeedetails {
 			return false;
 		if (Double.doubleToLongBits(salary) != Double.doubleToLongBits(emp.salary))
 			return false;
-		return true;
+		return true;*/
+		return false;
 	}
 
 	@Override
 	public String toString() {
 		return "Employeedetails [empNo=" + empNo + ", empName=" + empName + ", salary=" + salary + ", position="
 				+ position + ", location=" + location + "]";
+	}
+	@Override
+	public int compareTo(Object ob)
+	{
+		Employeedetails emp=(Employeedetails)ob;
+		return  this.position.compareTo(emp.getposition());
+	}
+
+	@Override
+	public int empNo() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String empName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double salary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String position() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String location() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object emp() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 
