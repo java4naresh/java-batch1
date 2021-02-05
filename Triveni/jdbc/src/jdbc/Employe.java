@@ -1,6 +1,8 @@
 package jdbc;
 
-public class Employe {
+import java.io.Serializable;
+
+public class Employe implements Serializable{
 	int empId;
 	String empName;
 	double empSalary;

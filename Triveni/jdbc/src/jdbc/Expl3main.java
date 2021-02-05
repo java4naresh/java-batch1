@@ -10,7 +10,6 @@ import java.io.ObjectOutputStream;
 public class Expl3main {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
-		final long serialVersionUID = 1L;
 		File file=new File("D:\\Filepath1");
 		System.out.println(file.mkdir());
 		File file2=new File("D:\\Filepath1\\DBMS2.txt");
