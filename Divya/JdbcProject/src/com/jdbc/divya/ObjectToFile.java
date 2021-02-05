@@ -25,10 +25,10 @@ public class ObjectToFile
 		oos.writeObject(e2);
 		FileInputStream fis=new FileInputStream("G:/Student/EmployeeDetails.txt");
 		ObjectInputStream ois=new ObjectInputStream(fis);
-		Employee e3=(Employee) ois.readObject();
-		Employee e4=(Employee) ois.readObject();
-		System.out.println(e3);
-		System.out.println(e4);
+		Employee emp1=(Employee) ois.readObject();
+		Employee emp2=(Employee) ois.readObject();
+		System.out.println(emp1);
+		System.out.println(emp2);
 		oos.flush();
 		oos.close();
 		fos.close();
