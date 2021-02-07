@@ -18,6 +18,10 @@ public class PreparedStatementExample {
 		pse.highetSalary(1);
 	}
 	
+	/**
+	 * this method will give the user choice highest salary
+	 * @param position
+	 */
 	public void highetSalary(int position) {
 		try {
 			Connection con = getConnection();
@@ -33,6 +37,9 @@ public class PreparedStatementExample {
 		}
 	}
 	
+	/**
+	 * 
+	 */
 	public void groupByCity() {
 		try {
 			Connection con = getConnection();
