@@ -18,6 +18,6 @@
   
  <servlet-mapping>
     <servlet-name>Demo</servlet-name>
-    <url-pattern>/Demo</url-pattern>
+    <url-pattern>/DemoPage</url-pattern>
  </servlet-mapping>
  </web-app>
