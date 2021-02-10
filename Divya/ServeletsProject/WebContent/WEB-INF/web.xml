@@ -9,15 +9,13 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-
-<servlet>
+  <servlet>
     <description></description>
     <servlet-name>Demo</servlet-name>
     <servlet-class>com.webApp.divya.Demo</servlet-class>
- </servlet>
-  
- <servlet-mapping>
+  </servlet>
+  <servlet-mapping>
     <servlet-name>Demo</servlet-name>
     <url-pattern>/DemoPage</url-pattern>
- </servlet-mapping>
- </web-app>
+  </servlet-mapping>
+</web-app>
