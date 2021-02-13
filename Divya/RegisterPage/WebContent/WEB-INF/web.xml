@@ -17,7 +17,7 @@
 	<servlet>
 	<description></description>
 	<servlet-name>ServletJdbc</servlet-name>
-	<servlet-class>com.divya.Register</servlet-class>
+	<servlet-class>com.divya.ServletJdbc</servlet-class>
 	</servlet>
 	<servlet-mapping>
 	<servlet-name>Register</servlet-name>
