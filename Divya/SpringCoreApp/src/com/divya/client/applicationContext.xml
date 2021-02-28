@@ -10,6 +10,7 @@
  <property name="name" value="Divya Reddy"></property> 
   <property name="age" value="24"></property> 
    <property name="mobile" value="8790197899"></property> 
+   <property name="sp2" ref="spring2"></property> <!-- Reference for spring2 object in spring1 -->
 </bean> 
 
 <bean id="spr1" class="com.divya.spring.Spring1">  
@@ -21,6 +22,28 @@
 
 <bean id="spring2" class="com.divya.spring.Spring2">  
 <!--  <property name="name" value="Vimal Jaiswal"></property>  -->
+</bean> 
+
+<bean id="address" class="com.divya.spring.SpringAddress">  
+<property name="address1" value="2-59,Kannala"></property>
+<property name="address2" value="9-65,Manthani"></property>
+<property name="city" value="Peddapally"></property>
+<property name="pincode" value="505184"></property>
+</bean>  
+
+<bean id="emp1" name="record1" class="com.divya.spring.SpringEmp">  
+ <property name="empId" value="39"></property>
+  <property name="empName" value="Divya"></property>  
+  <property name="empDesignation" value="SE"></property>  
+  <property name="empSal" value="10000"></property> 
+  <property name="add1" ref="address"></property>    
+</bean>  
+
+<bean id="emp2" class="com.divya.spring.SpringEmp">  
+ <property name="empId" value="66"></property>
+  <property name="empName" value="Triveni"></property>  
+  <property name="empDesignation" value="SSE"></property>  
+  <property name="empSal" value="20000"></property>    
 </bean>  
 
   

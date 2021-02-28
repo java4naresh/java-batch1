@@ -6,6 +6,9 @@ public class Spring1
 	private int age;
 	private long mobile;
 	
+	//Object Creation for spring2 in spring1
+	private Spring2 sp2; 
+	
 	public Spring1()
 	{
 		System.out.println("Welcome to spring1");
@@ -42,12 +45,22 @@ public class Spring1
 	public final void setMobile(long mobile) {
 		this.mobile = mobile;
 	}
+	
+
+	public final Spring2 getSp2() {
+		return sp2;
+	}
+
+	public final void setSp2(Spring2 sp2) {
+		this.sp2 = sp2;
+	}
 
 	@Override
-	public String toString()
-	{
-		return "Spring1 [name=" + name + ", age=" + age + ", mobile=" + mobile + "]";
+	public String toString() {
+		return "Spring1 [name=" + name + ", age=" + age + ", mobile=" + mobile + ", sp2=" + sp2 + "]";
 	}
+
+	
 	
 
 }

@@ -32,3 +32,4 @@ public class SpringMain
 	}
 
 }
+//If there are different perspectives then create interface and implement it to other classes and use the interface reference
