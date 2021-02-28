@@ -4,7 +4,9 @@ public class Student {
   private int id;
   private String name;
   private int age;
-  private String address;
+  private String gender;
+  private Address add;
+  
 public int getId() {
 	return id;
 }
@@ -23,15 +25,21 @@ public int getAge() {
 public void setAge(int age) {
 	this.age = age;
 }
-public String getAddress() {
-	return address;
+public String getGender() {
+	return gender;
 }
-public void setAddress(String address) {
-	this.address = address;
+public void setGender(String gender) {
+	this.gender = gender;
 }
-@Override
-public String toString() {
-	return "Student [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + "]";
+public Address getAdd() {
+	return add;
 }
-  
+public void setAdd(Address add) {
+	this.add = add;
+}
+
+  @Override public String toString() { return "Student [id=" + id + ", name=" +
+  name + ", age=" + age + ", gender=" + gender + ", add=" + add + "]"; }
+ 	
+
 }

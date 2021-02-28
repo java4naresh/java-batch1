@@ -10,7 +10,7 @@ import com.sai.Student;
 public class Test {
 
 	public static void main(String[] args) {
-		  Resource resource=new FileSystemResource("S:\\Repo\\java-batch1\\Sai\\SprinFirstPro\\src\\com\\sai\\application-context.xml");  
+		  Resource resource=new FileSystemResource("S:\\Repo\\java-batch1\\Sai\\SprinFirstPro\\src\\com\\sai\\common\\application-context.xml");  
 		    BeanFactory factory=new XmlBeanFactory(resource);  
 		    Student s=(Student) factory.getBean("st");
 		    System.out.println(s);

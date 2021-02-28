@@ -5,11 +5,18 @@
     xmlns:p="http://www.springframework.org/schema/p"  
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-      <bean id="st" class="com.sai.Student">
+      <bean id="st"  class="com.sai.Student">
       <property name="id" value="1"></property>
        <property name="name" value="sai"></property>
        <property name="age" value="22"></property>
-        <property name="address" value="kp"></property>
+        <property name="gender" value="male"></property> 
+        <property name="add"  ref="address"></property>
       </bean>    
       
+      <bean id="address" class="com.sai.Address">
+	<property name="address1" value="sr nagar"></property>
+	<property name="address2" value="madhura nagar"></property>
+	<property name="city" value="Hyd"></property>
+	<property name="pincode" value="500038"></property>
+     </bean>  
 </beans>               
