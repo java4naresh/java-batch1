@@ -6,7 +6,8 @@ public class Spring1
 	private int age;
 	private long mobile;
 	
-	//Object Creation for spring2 in spring1
+	//Object Creation for spring2 in spring1Class(This is called as Dependency Injection)
+	//Spring will inject the object into variables
 	private Spring2 sp2; 
 	
 	public Spring1()
