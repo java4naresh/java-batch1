@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+  <!-- Inserting values through Setter Injection ,then we use property tag-->
+               
+ <bean id="dept" class="com.divya.spring.CollegeDepartments">  
+<property name="deptName" value="CSE"></property> 
+<property name="deptNo" value="01"></property> 
+<property name="hodName" value="Dr.Srinivas"></property> 
+<property name="faculty" ref="Faculty"></property>
+</bean> 
+
+<!-- Inserting values through Constructor Injection,then we use constructor-arg tag -->
+<bean id="Faculty" class="com.divya.spring.CollegeFaculty">  
+<!--  <constructor-arg>
+<value>1001</value>
+</constructor-arg>
+<constructor-arg>
+<value>Mrs.Rajini</value>
+</constructor-arg>
+<constructor-arg>
+<value>CSE</value>
+</constructor-arg>
+<constructor-arg>
+<value>9652678434</value>
+</constructor-arg>
+<constructor-arg>
+<value>30000</value>
+</constructor-arg>
+<constructor-arg ref="stud"></constructor-arg>-->
+<property name="facultyId" value="1001"></property> 
+<property name="name" value="Mrs.Rajini"></property> 
+<property name="facultyDept" value="CSE"></property> 
+<property name="phNo" value="9652678434"></property> 
+<property name="sal" value="30000"></property> 
+<property name="student" ref="stud"></property>
+</bean> 
+
+<bean id="stud" class="com.divya.spring.CollegeStudent">
+<property name="studentId" value="539"></property>
+<property name="name" value="Divya"></property>
+<property name="address" value="2-59,Kannala"></property>
+<property name="mobile" value="8790197899"></property>
+<property name="branch" value="CSE"></property>
+
+</bean>
+</beans>              
