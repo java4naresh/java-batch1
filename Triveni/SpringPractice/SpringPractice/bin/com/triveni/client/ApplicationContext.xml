@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="imp" class="com.triveni.spring.BankImpl">  
+<property name="bName" value="SBI"></property>
+<property name="bAddress" value="LakshmiPuram"></property> 
+   <property name="distict" value="Guntur"></property> 
+<property name="impl" ref="impls"></property> 
+ 
+</bean>  
+<bean id="impls" class="com.triveni.spring.AccountImpl">
+
+<constructor-arg >
+<value>SriSaiGranites</value>
+</constructor-arg>
+<constructor-arg >
+<value>LakshmiTulasi </value>
+</constructor-arg>
+   
+<constructor-arg  ref="imp1"></constructor-arg>
+  </bean> 
+  
+  <bean id="imp1" class="com.triveni.spring.LoansImpl">  
+  <constructor-arg >
+<value>FiveLakhs</value>
+</constructor-arg>
+<constructor-arg >
+<value>NightyLakhs </value>
+</constructor-arg>
+<constructor-arg >
+<value>SixtyLakhs </value>
+</constructor-arg>
+     
+  </bean> 
+</beans>  
