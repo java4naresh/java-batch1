@@ -19,7 +19,7 @@ public class Owner {
 		this.companies = companies;
 		this.address = address;
 		this.employees = employees;
-	}
+}
 
 	public List<String> getCompanies() {
 		return companies;
