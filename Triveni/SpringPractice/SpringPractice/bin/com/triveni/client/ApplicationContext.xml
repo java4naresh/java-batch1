@@ -35,6 +35,26 @@
 <constructor-arg >
 <value>SixtyLakhs </value>
 </constructor-arg>
-     
+</bean>
+  <bean  id="citizen" class="com.triveni.spring.Citizen" scope="singleton">  
+  <property name="cities">
+  <list>
+  <value>Hyderabad</value>
+  <value>Guntur</value>
+  <value>Chennai</value>
+  <value>vizag</value>
+  </list>
+  </property>
   </bean> 
-</beans>  
+  <bean  id="student" class="com.triveni.spring.Student" autowire="byType"> 
+  </bean>
+  
+  <bean  id="address1" class="com.triveni.spring.Address"  > 
+  <property name="city" value="Hyderabad"></property> 
+  </bean>
+  
+  <bean  id="address" class="com.triveni.spring.Address" primary="true"> 
+  <property name="city" value="Chennai"></property> 
+  </bean>
+ 
+  </beans>
