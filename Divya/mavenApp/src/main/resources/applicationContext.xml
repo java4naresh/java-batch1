@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+               
+ <bean id="bike" class="com.divya.spring.Bikes">
+ <property name="bikes">
+ <list>
+		 <value>Activa 6G</value>
+		 <value>Fascino</value>
+		  <value>Vespa</value>
+		   <value>Jupiter</value>
+ </list>
+ </property>
+  <property name="cars">
+ <set>
+		 <value>BMW</value>
+		 <value>Swift</value>
+		  <value>Honda Amage</value>
+		   <value>Audi</value>
+ </set>
+ </property>
+  <property name="mobiles">
+ <map>
+		 <entry key="Vivo" value="V7+" />
+		 <entry key="Samsung" value="GalaxyPro"></entry>
+		 <entry key="Iphone" value="12Pro"></entry>
+		 <entry key="OnePlus" value="Nord"></entry>
+ </map>
+ </property>
+ </bean>              
+                             
+</beans>
