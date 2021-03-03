@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+               
+ <!-- <bean id="employee" class="com.divya.spring.Employee" scope="singleton">
+   <property name="empName" value="Divya"></property>
+ <property name="empId" value="39"></property>
+ <property name="designation" value="SE"></property> 
+  This is singleton scope and default scope also...if we dont mention scope as singleton 
+ then it considers as a singleton. 
+ </bean>-->
+ 
+  <bean id="emp1" class="com.divya.spring.Employee" scope="prototype">
+   <property name="empName" value="Triveni"></property>
+ <property name="empId" value="40"></property>
+ <property name="designation" value="SSE"></property> 
+  <!-- This is prototype scope and object will be created multiple times -->
+ </bean> 
+ 
+  <bean name="emp2" class="com.divya.spring.EmpDetails" autowire="byType">
+  <!-- Autowire-byName is to inject the values(Dependency Injection) by using autowire
+  Autowire-byType is to inject the values by type...it will check the type if bean id does not match, 
+   class type matches,it injects the values-->
+  
+ </bean>
+ 
+ </beans>
