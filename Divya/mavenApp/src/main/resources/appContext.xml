@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans  
-    xmlns="http://www.springframework.org/schema/beans"  
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
-    xmlns:p="http://www.springframework.org/schema/p"  
-    xsi:schemaLocation="http://www.springframework.org/schema/beans  
-               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd"> 
 
           <bean id="bike" class="com.divya.spring.Bike"  autowire="constructor"></bean>
    
@@ -16,6 +17,20 @@
     </bean>
    <bean id="aClass" class="com.divya.spring.A" autowire="constructor" lazy-init="true"></bean>
    <bean id="bClass" class="com.divya.spring.B" autowire="constructor"></bean> 
-    
 
+   
+  <!-- <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   <property name="driverClassName" value="com.mysql.jdbc.Driver" />  
+   <property name="url" value="jdbc:mysql://localhost:3306/javabatch1" />  
+   <property name="username" value="root" />  
+   <property name="password" value="4420" />  
+   </bean>
+   <bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+   <property name="dataSource" ref="datasource"></property>
+   </bean> 
+ <bean id="empDao" class="com.divya.dao.EmployeeDAO" autowire="byName">
+ </bean>-->
+ 
+<context:component-scan base-package="com.divya.*"></context:component-scan> 
+   
 </beans>

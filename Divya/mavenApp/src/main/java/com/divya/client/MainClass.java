@@ -7,6 +7,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
+import com.divya.dao.EmployeeDAO;
+
 public class MainClass {
 
 	public static void main(String[] args) 
@@ -17,7 +19,8 @@ public class MainClass {
 	         System.out.println(factory.getBean("aClass"));*/
 	         
 		ApplicationContext app=new ClassPathXmlApplicationContext("appContext.xml");
-
+		EmployeeDAO dao=app.getBean(EmployeeDAO.class);
+		dao.printAllEmployees();
 	}
 
 }
