@@ -20,6 +20,7 @@ public class MainClass {
 	         
 		ApplicationContext app=new ClassPathXmlApplicationContext("appContext.xml");
 		EmployeeDAO dao=app.getBean(EmployeeDAO.class);
+		dao.printEmployee(39);
 		dao.printAllEmployees();
 		/*dao.printSalary(39);
 		dao.printName(39);
