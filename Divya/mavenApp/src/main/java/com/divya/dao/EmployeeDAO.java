@@ -1,17 +1,25 @@
 package com.divya.dao;
 
+import java.sql.CallableStatement;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.CallableStatementCreator;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.SqlOutParameter;
+import org.springframework.jdbc.core.simple.SimpleJdbcCall;
 import org.springframework.stereotype.Component;
 
 import com.divya.bo.EmployeeBO;
@@ -20,6 +28,9 @@ public class EmployeeDAO
 {
 	@Autowired
 	private JdbcTemplate template;
+	
+	private SimpleJdbcCall simpleJdbcCallRefCursor;
+
 	
 	//private DataSource dataSource;
 	
@@ -31,6 +42,14 @@ public class EmployeeDAO
 	public final void setTemplate(JdbcTemplate template) {
 		this.template = template;
 	}
+	public void getEmployeesFromProcedure()
+	{
+		EmployeeStoredProcedure procedure= new EmployeeStoredProcedure(template);
+		Map m=procedure.getEmployees();
+		System.out.println(m);
+		System.out.println(m.get("RESULT_LIST"));
+	}
+	
 	public void printAllEmployees()
 	{
 		//System.out.println(template.queryForObject("select empName from employee where empId=39",String.class));
