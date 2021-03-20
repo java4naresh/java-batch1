@@ -10,7 +10,6 @@ import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
 
 public class GenericServletExmpl extends GenericServlet {
 	@Override
@@ -22,8 +21,6 @@ public class GenericServletExmpl extends GenericServlet {
 
 	@Override
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-		HttpServletRequest httpReq=(HttpServletRequest)req;
-		httpReq.getSession(true);
 		PrintWriter ps = res.getWriter();
 		ps.write("<html>");
 		ps.write("<body>");
