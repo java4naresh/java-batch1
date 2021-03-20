@@ -9,15 +9,6 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
-	<listener>
-		<listener-class>com.triveni.listener.ContextListener</listener-class>
-	</listener>
-	<listener>
-		<listener-class>com.triveni.listener.RequestListener</listener-class>
-	</listener>
-	<listener>
-		<listener-class>com.triveni.listener.SessionListener</listener-class>
-	</listener>
 	<servlet>
 		<description></description>
 		<servlet-name>GenericServletExmpl</servlet-name>
@@ -31,15 +22,7 @@
 		<param-value>12345</param-value>
 		</init-param>
 	</servlet>
-<context-param>  
-    <param-name>userName</param-name>  
-    <param-value>root</param-value>  
-  </context-param>
-  <context-param>  
-    <param-name>pwd</param-name>  
-    <param-value>12345</param-value>  
-  </context-param> 
- 
+
 
 	<servlet-mapping>
 		<servlet-name>GenericServletExmpl</servlet-name>
