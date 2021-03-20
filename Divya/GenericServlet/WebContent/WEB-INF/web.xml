@@ -9,6 +9,15 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	<listener>
+		<listener-class>com.divya.listener.ContextListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.divya.listener.RequestListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.divya.listener.SessionListener</listener-class>
+	</listener>
 	<servlet>
 	<description></description>
 	<servlet-name>GenericServletEx</servlet-name>
@@ -26,4 +35,13 @@
 	<servlet-name>GenericServletEx</servlet-name>
 	<url-pattern>/GenericSample</url-pattern>
 	</servlet-mapping>
+	
+	<context-param>
+	<param-name>userName</param-name>
+	<param-value>root</param-value>
+	</context-param>
+	<context-param>
+	<param-name>password</param-name>
+	<param-value>4420</param-value>
+	</context-param>
 </web-app>
