@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd"> 
+               
+
+<!-- <bean id="citizen" class="com.naresh.spring.Citizen" scope="prototype">
+<property name="cities">
+<list>
+<value>Hyderabad</value>
+<value>Guntur</value>
+<value>Vijayawada</value>
+</list>
+</property>
+</bean>
+<bean name="student" class="com.naresh.spring.Student">
+<property name="address1" ref="address1"></property>
+</bean>
+
+
+<bean name="address1" class="com.naresh.spring.Address">
+<property name="city" value="Hyderabad"></property>
+</bean>
+
+<bean name="address" class="com.naresh.spring.Address" primary="true">
+<property name="city" value="Guntur"></property>
+</bean>
+
+<bean name="address" class="com.naresh.spring.Address">
+<property name="city" value="Guntur"></property>
+</bean>
+<bean name="a" class="com.naresh.spring.A" autowire="constructor" lazy-init="true">
+</bean>
+ <bean name="b" class="com.naresh.spring.B" autowire="constructor">
+</bean>
+<context:annotation-config/> -->
+<context:component-scan base-package="com.naresh.spring"></context:component-scan> 
+
+<!-- <bean id="mi3" class="com.naresh.spring.Dependency" scope="singleton"></bean>
+<bean id="mi" class="com.naresh.spring.Dependency2" scope="singleton"></bean>
+<bean id="id3" class="com.naresh.spring.Dependency3" scope="singleton"></bean> 
+<bean id="mi2" class="com.naresh.spring.Dependency4" scope="singleton"></bean>
+<bean id="id5" class="com.naresh.spring.Dependency5" scope="singleton"></bean> -->
+
+<!-- <bean id="dep" class="com.naresh.spring.Dependent" autowire="byName"  scope="prototype">
+<constructor-arg ref="id1"></constructor-arg>
+<constructor-arg value="Naresh"></constructor-arg>
+<property name="mi" ref="id3"></property>
+<property name="mi2" ref="id5"></property> 
+</bean> -->
+</beans>
